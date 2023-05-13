@@ -121,13 +121,14 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-.Typewritting{
+
+.Typewritting {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: monospace;
     white-space: nowrap;
-    border-right:  4px solid;
+    border-right: 4px solid;
     width: 29ch;
     animation: typing 2s steps(29), blink .5s infinite step-end alternate;
     overflow: hidden;
@@ -135,15 +136,21 @@ body {
     color: white;
     font-size: 3em;
     margin-bottom: 1em;
-    border-bottom:3px groove #efb810 ;
-}
-@keyframes typing {
-from {width: 0}
+    border-bottom: 3px groove #efb810;
 }
 
-@keyframes blink{
-    50%{ border-color: transparent;}
+@keyframes typing {
+    from {
+        width: 0
+    }
 }
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 .container-1 {
     text-align: center;
     padding-top: 50px;
@@ -151,7 +158,8 @@ from {width: 0}
     flex-direction: column;
     align-items: center;
 }
-.video-documental{
+
+.video-documental {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,10 +171,11 @@ from {width: 0}
     color: white;
     font-size: 3em;
     margin-bottom: 1em;
-    border-top: 3px groove #efb810 ;
-    border-bottom:3px groove #efb810 ;
+    border-top: 3px groove #efb810;
+    border-bottom: 3px groove #efb810;
     display: inline-block;
 }
+
 .inicio-img {
     max-width: 100%;
     height: auto;
@@ -178,7 +187,7 @@ from {width: 0}
 
 .titulo-inicio {
     text-align: center;
-    margin: 100px 50px;
+    margin-top: 8%;
     background-color: #efb810;
     display: inline-block;
 
@@ -209,16 +218,50 @@ from {width: 0}
     font-size: 1.5rem;
 }
 
+
+
+
 @media screen and (max-width:768px) {
 
     .container-3 {
         width: 90%;
     }
-    .pa-cont-3{
+
+    .pa-cont-3 {
         margin-left: 0px;
     }
-    .Typewritting{
+
+    .Typewritting {
         font-size: 2em;
+    }
+
+    .titulo-inicio {
+        margin-top: 15%;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .Typewritting {
+        font-size: 1.5em;
+    }
+
+    .container-3 {
+        width: 100%;
+    }
+
+    .img-container-3 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .pa-cont-3 {
+        margin-top: 3rem;
+        height: auto;
+    }
+
+    .titulo-inicio {
+        margin-top: 26%;
     }
 
 }
@@ -228,16 +271,19 @@ from {width: 0}
 .body-productos {
     background: linear-gradient(to right, #5f5f5f 50%, #a39d9d 50%);
 }
-.titulo{
+
+.titulo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.titulo-productos{
+
+.titulo-productos {
     margin-top: 10%;
     color: white;
-    border-bottom:3px groove #efb810;
+    border-bottom: 3px groove #efb810;
 }
+
 .productos {
     padding: 0;
     position: relative;
@@ -311,16 +357,33 @@ from {width: 0}
     line-height: 1.5;
 }
 
+@media screen and (max-width:1024px) {
+
+    .producto-info {
+        height: 300px;
+    }
+}
+
+
 @media screen and (max-width:768px) {
-    .producto-info{
+    .producto-info {
         z-index: 3;
     }
-    .img-logo{
+
+    .img-logo {
         opacity: 0.3;
     }
-    
-} 
-    
+
+}
+
+@media screen and (max-width:425px) {
+    .titulo {
+        margin-top: 20%;
+    }
+}
+
+
+
 
 /*ACA COMIENZA LA SECCION SERVICIOS*/
 .main {
@@ -331,6 +394,8 @@ from {width: 0}
     font-size: 32px;
     margin-top: 115px;
     color: white;
+    border-bottom: 3px groove #efb810;
+    display: inline-block;
 }
 
 .section {
@@ -537,6 +602,8 @@ footer {
     .main h2 {
         font-size: 28px;
         margin-top: 150px;
+        border-bottom: 3px groove #efb810;
+        display: inline-block;
     }
 
 
@@ -598,7 +665,7 @@ footer {
 /* 
      SECCION DE CONTACTANOS */
 .body-encuentranos {
-    background-image: url(/img/mapa.png);
+    background-image: url(img/mapa.png);
 }
 
 .contactanos p {
@@ -619,6 +686,7 @@ footer {
     margin-left: 50%;
     border-radius: 0.6rem;
     background-color: #fcfcfc;
+    margin-bottom: 5%;
 }
 
 .main__form {
@@ -731,6 +799,24 @@ footer {
     height: 100%;
 }
 
+.mapita {
+    width: 90%;
+    margin: 10% auto;
+}
+
+.mapita-h2 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    margin-left: 10%;
+
+}
 
 
 
@@ -739,10 +825,32 @@ footer {
 @media screen and (max-width:768px) {
 
     .main__contact {
-        margin: 10% auto;
+        margin: 13% auto;
+        width: auto;
     }
 
     .main__contact ul {
         padding-left: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .contactanos p {
+        margin-bottom: 3%;
+        background-color: #e9b311;
+        margin-left: 0px;
+    }
+
+    .main__contact ul li {
+        margin: 0 13px;
+    }
+
+    .mapita-h2 {
+        font-size: 2rem;
+        margin-left: 0px;
+        width: 100%;
     }
 }
