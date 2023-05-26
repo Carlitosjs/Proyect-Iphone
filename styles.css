@@ -240,7 +240,6 @@ body {
     }
 
 }
-
 @media screen and (max-width:425px) {
     .Typewritting {
         font-size: 1.5em;
@@ -263,13 +262,19 @@ body {
     .titulo-inicio {
         margin-top: 26%;
     }
+    .video-documental video{
+        width: 100%;
+    }
 
 }
+
+
 
 /* aca comienza la seccion de productos */
 
 .body-productos {
-    background: linear-gradient(to right, #5f5f5f 50%, #a39d9d 50%);
+    background:linear-gradient(to right, #131212, #e4e3e3);
+
 }
 
 .titulo {
@@ -311,7 +316,9 @@ body {
     justify-content: center;
     border: 1px inset #efb810;
     border-radius: 5px;
-    color: white;
+    border-radius: 0.6rem;
+    color: black;
+    background-color: #fcfcfc;
     box-shadow: 1px 2px 2px 1px #efb810;
 
 }
@@ -344,6 +351,7 @@ body {
 .producto img {
     width: 500px;
     height: 420px;
+    border-radius: 0.6rem;
 }
 
 .producto h3 {
@@ -661,11 +669,13 @@ footer {
         align-items: center;
     }
 }
-
 /* 
      SECCION DE CONTACTANOS */
 .body-encuentranos {
-    background-image: url(img/mapa.png);
+    background-image:url(img/Prueba-4.jpg);
+    background-position: center;
+    background-clip: border-box;
+    background-size:cover;
 }
 
 .contactanos p {
@@ -813,6 +823,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 0.6rem;
     width: 65%;
     margin-left: 10%;
 
